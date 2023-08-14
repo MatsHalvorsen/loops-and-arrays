@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+
+    <button onclick="print2()">2 gangen</button>
+    <div id="num"></div>
+
+    <script>    
+    function print2(){     
+        let stopValue = 20;
+        for(let counter = 2; counter<=stopValue; counter +=2 ) {
+            document.getElementById('num').innerHTML += '<li>' + counter + '</li>';
+        }
+    }
+    </script>       
+</body>
+</html>
