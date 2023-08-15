@@ -1,3 +1,13 @@
+// bruk loop til å printe ut 2-gangen
+function print2(){     
+    let stopValue = 20;
+    for(let counter = 2; counter<=stopValue; counter +=2 ) {
+        document.getElementById('num').innerHTML += '<li>' + counter + '</li>';
+    }
+}
+
+
+// loop med string Lag en funksjon som teller opp antall vokaler i en string ved hjelp av en for-løkke
 function vocalCounter(string) {
     let aCounter = 0;
     let eCounter = 0;
