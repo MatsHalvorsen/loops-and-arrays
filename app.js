@@ -39,3 +39,37 @@ function vocalCounter(string) {
 }  
 
 vocalCounter("dette er en test før jeg må løse oppgaven på nytt");
+
+
+//Lag en funksjon som tar input fra brukeren og reverserer teksten ved hjelp av en for-løkke
+/*function reverseText() {
+
+    let originalText =prompt("skriv inn teksten du ønkser å reversere");
+
+    let reversedText = '';
+
+    for (let i = originalText.length -1; i >= 0; i--) {
+        reversedText += originalText[i];
+    }
+
+    alert("den reverserte teksten:" + reversedText);
+}
+
+    reverseText(); 
+    */
+
+    // lag en funksjon som genererer 2 randome tall så lenge tallene er ulike fra hverandre.
+    //når de er like print ut teksten "Equal numbers found" - samt hvilke tall det ble
+
+    function equalNumbers(){
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
+        while (num1 != num2){
+        num1 = Math.floor(Math.random() * 10);
+        num2 = Math.floor(Math.random() * 10);
+        }
+            console.log("Equal numbers found: " + num1);
+        }
+
+        equalNumbers();
+        
